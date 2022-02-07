@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'casey.jacobson43@ethereal.email',
-        pass: 'AhJh1HVSBYadkW8Mz9'
+        user: 'helmer.gerhold81@ethereal.email',
+        pass: 'AE9SyrwWGfjn32rcSt'
     }
 });
 
@@ -14,7 +14,7 @@ cron.schedule('* * * * *', () => {
     console.log('_________________________');
     console.log('Running cron-mail');
     let messageOptions = {
-        from: 'casey.jacobson43@ethereal.email',
+        from: 'helmer.gerhold81@ethereal.email',
         to: 'aamir@applaunch.io',
         subject: 'Scheduled Email',
         text: 'Hi there. This email was automatically sent by us.'
